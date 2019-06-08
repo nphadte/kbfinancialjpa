@@ -1,3 +1,4 @@
+/*
 package com.example.kbfinancialjpa.service;
 
 import com.example.kbfinancialjpa.model.Bank;
@@ -26,3 +27,4 @@ public class ATMService {
         return 1;
     }
 }
+*/

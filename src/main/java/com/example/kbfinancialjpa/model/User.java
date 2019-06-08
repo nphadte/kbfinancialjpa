@@ -1,27 +1,28 @@
 package com.example.kbfinancialjpa.model;
 
-            import javax.persistence.*;
-            import java.util.Date;
+import javax.persistence.*;
+import java.util.Date;
 
-    @Entity
-    @Table(name = "FINANCES_USER")
-    public class User {
+@Entity
+@Table(name = "FINANCES_USER")
+public class User {
 
-        @Id
-        @GeneratedValue(strategy = GenerationType.IDENTITY)
-        @Column(name = "USER_ID")
-        private Long user_Id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "USER_ID")
+    private Long user_Id;
 
-        @Column(name = "FIRST_NAME")
-        private String first_name;
+    @Column(name = "FIRST_NAME")
+    private String first_name;
 
+    @Column(name = "LAST_NAME")
+    private String last_name;
 
-        @Column(name = "LAST_NAME")
-        private String last_name;
+    @Column(name = "BIRTH_DATE", nullable = false)
+    private Date birth_date;
 
-        @Column(name = "BIRTH_DATE", nullable = false )
-        private Date birth_date;
-
+    @Column(name = "EMAIL_ADDRESS")
+    private String email_address;
 
     @Column(name = "LAST_UPDATED_BY")
     private String last_updated_by;
@@ -32,7 +33,7 @@ package com.example.kbfinancialjpa.model;
     @Column(name = "CREATED_BY", updatable = false)
     private String created_by;
 
-    @Column(name = "CREATED_DATE", updatable = false )
+    @Column(name = "CREATED_DATE", updatable = false)
     private Date created_date;
 
     @Column(name = "USER_ADDRESS_LINE_1")
@@ -179,4 +180,3 @@ package com.example.kbfinancialjpa.model;
         this.zip_code = zip_code;
     }
 }
-

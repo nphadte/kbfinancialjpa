@@ -1,3 +1,4 @@
+/*
 package com.example.kbfinancialjpa.repository;
 
 import com.example.kbfinancialjpa.model.Bank;
@@ -13,3 +14,4 @@ public interface BankJpaRepository extends JpaRepository<Bank, Long> {
 
     public  List<Bank>  findByState(String state);
 }
+*/

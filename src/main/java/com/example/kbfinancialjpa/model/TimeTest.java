@@ -8,7 +8,7 @@ import java.util.Date;
 public class TimeTest {
 
     @Id
-    @GeneratedValue
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
     @Column(name = "TIME_TEST_ID")
     private Long timeTestId;
 
@@ -41,7 +41,6 @@ public class TimeTest {
     private java.sql.Time sqlTimeColumn;
 
     public TimeTest() {
-
     }
 
     public TimeTest(Date date) {

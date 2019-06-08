@@ -1,23 +1,31 @@
+/*
 package com.example.kbfinancialjpa.model;
 
-import javax.persistence.Entity;
+import javax.persistence.*;
 import java.util.Date;
 
 @Entity
+@Table(name = "ACCOUNT_TYPE")
 public class AccountType {
 
-    private int accountType_id;
+    @Id
+    @GeneratedValue(strategy = GenerationType.IDENTITY)
+    @Column(name = "ACCOUNT_TYPE_ID")
+    private int account_type_id;
 
-
+    @Column(name = "NAME")
     private String name;
 
-
+    @Column(name = "LAST_UPDATED_DATE")
     private Date last_updated_date;
 
+    @Column(name = "LAST_UPDATED_BY")
     private String last_updated_by;
 
+    @Column(name = "CREATED_DATE")
     private Date created_date;
 
+    @Column(name = "CREATED_BY")
     private String created_by;
 
     public AccountType(int account_type_id, String name, Date last_updated_date, String last_updated_by, Date created_date, String created_by) {
@@ -76,4 +84,4 @@ public class AccountType {
     public void setCreated_by(String created_by) {
         this.created_by = created_by;
     }
-}
+}*/

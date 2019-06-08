@@ -11,7 +11,7 @@ import java.util.Date;
 @Table(name = "TRANSACTION")
 public class Transaction {
 
-    /*@Id
+    @Id
     @Column(name = "TRANSACTION_ID")
     private String transaction_Id;
 
@@ -158,5 +158,5 @@ public class Transaction {
 
     public void setCreated_Date(Date created_Date) {
         this.created_Date = created_Date;
-    }*/
+    }
 }

@@ -16,8 +16,8 @@ public class Account {
     @Column(name = "BANK_ID")
     private Long bank_Id;
 
-
-    private AccountType accountType;
+    //@Column(name = "ACCOUNT_TYPE")
+    //private AccountType accountType;
 
     @Column(name = "NAME")
     private String name;
@@ -46,10 +46,10 @@ public class Account {
     @Column(name = "CREATED_DATE")
     private Date created_date;
 
-    public Account(Long account_Id, Long bank_Id, AccountType accountType, String name, BigDecimal initialBalance, BigDecimal currentBalance, Date open_date, Date close_date, String last_updated_by, Date last_updated_date, String created_by, Date created_date) {
+    public Account(Long account_Id, Long bank_Id, String name, BigDecimal initialBalance, BigDecimal currentBalance, Date open_date, Date close_date, String last_updated_by, Date last_updated_date, String created_by, Date created_date) {
         this.account_Id = account_Id;
         this.bank_Id = bank_Id;
-        this.accountType = accountType;
+        //this.accountType = accountType;
         this.name = name;
         this.initialBalance = initialBalance;
         this.currentBalance = currentBalance;
@@ -77,13 +77,13 @@ public class Account {
         this.bank_Id = bank_Id;
     }
 
-    public AccountType getAccountType() {
-        return accountType;
-    }
+    //public AccountType getAccountType() {
+    //    return accountType;
+    //}
 
-    public void setAccountType(AccountType accountType) {
-        this.accountType = accountType;
-    }
+    //public void setAccountType(AccountType accountType) {
+    //    this.accountType = accountType;
+    //}
 
     public String getName() {
         return name;
