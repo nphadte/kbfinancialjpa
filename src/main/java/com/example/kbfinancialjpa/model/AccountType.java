@@ -1,4 +1,3 @@
-/*
 package com.example.kbfinancialjpa.model;
 
 import javax.persistence.*;
@@ -84,4 +83,4 @@ public class AccountType {
     public void setCreated_by(String created_by) {
         this.created_by = created_by;
     }
-}*/
+}

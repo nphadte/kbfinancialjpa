@@ -1,5 +1,7 @@
 package com.example.kbfinancialjpa.model;
 
+import org.hibernate.annotations.Formula;
+
 import javax.persistence.*;
 import java.util.Date;
 
@@ -32,6 +34,9 @@ public class User {
 
     @Column(name = "CREATED_BY", updatable = false)
     private String created_by;
+
+    @Formula("lower(datediff(curdate(), birth_date)/365)")
+    private int age;
 
     @Column(name = "CREATED_DATE", updatable = false)
     private Date created_date;
